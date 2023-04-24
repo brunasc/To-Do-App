@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: montserrat;
+  src: url("assets/fonts/Montserrat-Regular.ttf") format("opentype");
+}
+
+:root {
+  --azul: #162056;
+  --azul-ciano: #7fc2e4;
+  --branco: #ffffff;
+  --cinzento: #323232;
+  --lilas: #c1bdda;
+  --lilas-claro: #e6e1ef;
+  --roxo: #533d8b;
+  --cinza-claro: #ececec;
+  --cinza: #808080;
+  --verde: #56c080;
+  --amarelo: #ffc72c;
+  --cinza-icon: #f4f4f4;
+}
+
+* {
+  font-family: "montserrat", "arial", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: var(--lilas);
+}
+/* estilizando scroll bar no Firefox */
+body {
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: var(--roxo) var(--lilas-claro);
+  
+}
