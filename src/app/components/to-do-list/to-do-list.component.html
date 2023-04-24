@@ -1,22 +1,22 @@
-<div class="container">  
+<div class="container">
   <div class="box">
     <h1 class="title-app">To Do List</h1>
-    
+
     <form [formGroup]="form" class="center-app">
       <input type="text" name="add" id="add" formControlName="task" placeholder="Adicionar tarefa" class="add-task">
-      <button [disabled]="form.invalid" class="btn btn-add" (click)="addTask()">Adicionar</button>    
+      <button [disabled]="form.invalid" class="btn btn-add" (click)="addTask()">Adicionar</button>
     </form>
 
     <ul>
       <li class="list" *ngFor="let item of listToDo">
-          {{item.todo}}
+        {{item.todo}}
         <button *ngIf="!item.done" (click)="markAsDone(item)" class="btn"><i class="fa-regular fa-circle-check"></i></button>
         <button *ngIf="item.done" (click)="markAsUndone(item)" class="btn"><i class="fa-solid fa-circle-check" style="color: #533d8b;"></i></button>
         <button class="btn btn-delete" (click)="removeTask(item)"><i class="fa-solid fa-trash-can"></i></button>
       </li>
-      
+
     </ul>
-    
+
   </div>
-  
+
 </div>

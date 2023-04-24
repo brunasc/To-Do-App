@@ -13,7 +13,7 @@ export class ToDoListComponent implements OnInit {
   listToDo: ToDoList[] = [];
   form!: FormGroup;
 
-  constructor(private fb: FormBuilder) { 
+  constructor(private fb: FormBuilder) {
   }
 
   ngOnInit(): void {
@@ -60,6 +60,6 @@ export class ToDoListComponent implements OnInit {
     localStorage.setItem('ToDo List', data);
   }
 
-  
+
 
 }

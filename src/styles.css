@@ -27,6 +27,7 @@ body {
   padding: 0px;
   background: var(--lilas);
 }
+
 /* estilizando scroll bar no Firefox */
 body {
   scrollbar-width: thin;          /* "auto" or "thin" */
